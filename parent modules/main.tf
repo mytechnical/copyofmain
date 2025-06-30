@@ -95,8 +95,13 @@ module "sql_database" {
   sql_database_name   = "tododb"
 }
 
-# bhai ek kahani add kua ha ahvjsadbkjcbjkCbs
-
+module "sql_database1" {
+  depends_on          = [module.sql_server]
+  source              = "../modules/azurerm_sql_database"
+  sql_server_name     = "todosqlserver008"
+  resource_group_name = "rg-jeet"
+  sql_database_name   = "tododb"
+}
 
 # NSG ko call kerna ha 
 # nSG ko NIC mai attached kerna ha
