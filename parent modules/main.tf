@@ -95,6 +95,8 @@ module "sql_database" {
   sql_database_name   = "tododb"
 }
 
+# bhai ek kahani add kua ha ahvjsadbkjcbjkCbs
+
 
 # NSG ko call kerna ha 
 # nSG ko NIC mai attached kerna ha
