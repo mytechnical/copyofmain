@@ -77,7 +77,7 @@ module "frontend_vm" {
 }
 
 
-/*module "sql_server" {
+module "sql_server" {
   source                       = "../modules/azurerm_sql_server"
   sql_server_name              = "todosqlserver008"
   resource_group_name          = "rg-jeet"
@@ -85,16 +85,16 @@ module "frontend_vm" {
   administrator_login          = "sqladmin"
   administrator_login_password = "P@ssw0rd1234!"
 }
-*/
 
-/*module "sql_database" {
+
+module "sql_database" {
   depends_on          = [module.sql_server]
   source              = "../modules/azurerm_sql_database"
   sql_server_name     = "todosqlserver008"
   resource_group_name = "rg-jeet"
   sql_database_name   = "tododb"
 }
-*/
+
 
 # NSG ko call kerna ha 
 # nSG ko NIC mai attached kerna ha
