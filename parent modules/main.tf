@@ -112,3 +112,4 @@ module "sql_database2" {
 
 # NSG ko call kerna ha 
 # nSG ko NIC mai attached kerna ha
+#kahain ek or add hui ha
