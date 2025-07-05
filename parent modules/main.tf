@@ -110,6 +110,4 @@ module "sql_database2" {
   sql_database_name   = "tododb"
 }
 
-# NSG ko call kerna ha 
-# nSG ko NIC mai attached kerna ha
-#kahain ek or add hui ha
+# new kahani add kerna ha 
