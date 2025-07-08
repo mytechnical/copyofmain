@@ -6,14 +6,10 @@ module "resource_group" {
 
 module "resource_group" {
   source                  = "../modules/azurerm_resource_group"
-  resource_group_name     = "rg-jeet-shi"
-  resource_group_location = "centralindia"
-}
-module "resource_group" {
-  source                  = "../modules/azurerm_resource_group"
   resource_group_name     = "rg-jeet-galat2"
   resource_group_location = "centralindia"
 }
+
 
 
 
