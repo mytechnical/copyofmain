@@ -4,13 +4,6 @@ module "resource_group" {
   resource_group_location = "centralindia"
 }
 
-module "resource_group" {
-  source                  = "../modules/azurerm_resource_group"
-  resource_group_name     = "rg-jeet-new bnaya ha conflicts k liye"
-  resource_group_location = "centralindia"
-}
-
-
 module "virtual_network" {
   depends_on               = [module.resource_group]
   source                   = "../modules/azurerm_virtual_network"
@@ -102,21 +95,5 @@ module "sql_database" {
   sql_database_name   = "tododb"
 }
 
-module "sql_database1" {
-  depends_on          = [module.sql_server]
-  source              = "../modules/azurerm_sql_database"
-  sql_server_name     = "todosqlserver008"
-  resource_group_name = "rg-jeet"
-  sql_database_name   = "tododb"
-}
-module "sql_database2" {
-  depends_on          = [module.sql_server]
-  source              = "../modules/azurerm_sql_database"
-  sql_server_name     = "todosqlserver008"
-  resource_group_name = "rg-jeet"
-  sql_database_name   = "tododb"
-}
 
-# NSG ko call kerna ha 
-# nSG ko NIC mai attached kerna ha
-#kahain ek or add hui ha
+
