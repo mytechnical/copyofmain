@@ -6,7 +6,7 @@ module "resource_group" {
 
 module "resource_group" {
   source                  = "../modules/azurerm_resource_group"
-  resource_group_name     = "rg-jeet-conflitcs test kerna ha phla bnda na"
+  resource_group_name     = "rg-jeet-conflitcs test kerna ha phla bnda na test 103" 
   resource_group_location = "centralindia"
 }
 
