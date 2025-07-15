@@ -6,13 +6,7 @@ module "resource_group" {
 
 module "resource_group" {
   source                  = "../modules/azurerm_resource_group"
-  resource_group_name     = "rg-jeet-conflicts"
-  resource_group_location = "centralindia"
-}
-
-module "resource_group" {
-  source                  = "../modules/azurerm_resource_group"
-  resource_group_name     = "rg-jeet-PR test conflicts"
+  resource_group_name     = "rg-jeet-PR test"
   resource_group_location = "centralindia"
 }
 
