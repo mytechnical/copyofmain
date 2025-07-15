@@ -10,6 +10,13 @@ module "resource_group" {
   resource_group_location = "centralindia"
 }
 
+module "resource_group" {
+  source                  = "../modules/azurerm_resource_group"
+  resource_group_name     = "rg-jeet-PR test conflicts"
+  resource_group_location = "centralindia"
+}
+
+
 module "virtual_network" {
   depends_on               = [module.resource_group]
   source                   = "../modules/azurerm_virtual_network"
